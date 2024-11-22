@@ -1,18 +1,13 @@
 ---
-title: Documentation
-next: first-page
+title: Server Admin
+next: /docs/Installation/database
 ---
 
-This is a demo of the theme's documentation layout.
+This is the documentation for the admin of a Glympse server. 
 
-## Hello, World!
+Glympse is supplied as a docker container exclusively. 
 
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+#### Prerequisites:
+* docker
+* docker compose
+* Nvidia GPU for transcribing (preferred for transcoding tasks)

@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: My Site
+title: Glympse
 
 # import hextra as module
 module:
@@ -19,13 +19,10 @@ markup:
 menu:
   main:
     - name: Docs
-      pageRef: /docs
+      pageRef: /
       weight: 1
-    - name: About
-      pageRef: /about
-      weight: 2
     - name: Contact ↗
-      url: "https://github.com/imfing"
+      url: "https://git.themainframe.co.uk/josh"
       weight: 3
     - name: Search
       weight: 4
@@ -33,24 +30,24 @@ menu:
         type: search
     - name: GitHub
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      url: "https://git.themainframe.co.uk/josh/glympse_docs"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
   navbar:
     displayTitle: true
-    displayLogo: false
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      link: /
+      width: 40
+      height: 40    
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
 
   editURL:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    base: "https://git.themainframe.co.uk/josh/Glympse_Docs/src/branch/main/content"

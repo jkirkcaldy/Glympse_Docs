@@ -1,17 +1,14 @@
 ---
-title: My Site
+title: Glympse
 toc: false
 ---
 
-This is the landing page.
-
-## Explore
-
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
+Glympse is a your solution to a hybrid production. Access your rushes from across the globe and view in a web browser. Allow your teams to work where they want when they need to. 
 
 ## Documentation
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< cards >}}
+  {{< card link="docs" title="Server Admin" icon="book-open" >}}
+  {{< card link="user_docs" title="User Documentation" icon="user" >}}
+{{< /cards >}}
+
