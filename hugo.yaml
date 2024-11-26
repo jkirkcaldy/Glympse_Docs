@@ -1,4 +1,6 @@
 # Hugo configuration file
+baseURL: 'https://docs.glympsevideo.com'
+languageCode: 'en-gb'
 title: Glympse
 
 # import hextra as module
