@@ -1,18 +1,8 @@
 ---
 title: User Documentation
-next: first-page
+next: /user_docs/navigation
 ---
 
-This is a demo of the theme's documentation layout.
+Welcome to the user documentation of Glympse. 
 
-## Hello, World!
-
-```go {filename="main.go"}
-package main
-
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+Glympse is designed to be as intuitive as possible, so hopefully you won't need to read this but its here if you need. 

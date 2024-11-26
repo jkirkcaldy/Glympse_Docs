@@ -73,9 +73,8 @@ services:
     networks:
       glympse_net: null
 networks:
-  default:
+  glympse_net:
     external: true
-    name: glympse_net
 ```
 There are two more files that you need to create and save before running the compose file. 
 

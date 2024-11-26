@@ -1,0 +1,76 @@
+services:
+  Glympse:
+    image: git.themainframe.co.uk/josh/glympse
+    container_name: Glympse
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    environment:
+      TZ: Europe/London
+      ENABLE_UWSGI: yes
+      ENABLE_NGINX: yes
+      ENABLE_CELERY_BEAT: yes
+      ENABLE_PROCESSING: yes
+      ENABLE_MIGRATIONS: yes
+      ENABLE_TRANSCRIBER: no
+      ENABLE_TRANSCODER: no
+      DJANGO_SETTINGS_MODULE: Glympse.settings.dev
+      SECRET_KEY: "%bcfCLGtkg&KucAAg*KnUeENBUT6xv5wJDb^@Yz#&vn%n2Lod8dinEyNoC^usBv"
+      SECRET_ADMIN_URL: bWBgVqaj8p95huSud
+      CSRF_TRUSTED_ORIGINS: http://127.0.0.1
+      ALLOWED_HOSTS: 127.0.0.1
+      ADMINS: admin@glympsevideo.com
+      DOMAIN: glympse.glympsevideo.com
+      SQL_ENGINE: django.db.backends.mysql
+      SQL_DATABASE: glympse
+      SQL_USER: glympse
+      SQL_PASSWORD: GdhKngTjC9AM5gqCm32L
+      SQL_HOST: mysql
+      SQL_PORT: 3306
+      EMAIL_HOST: mail.themainframe.co.uk
+      EMAIL_PORT: 587
+      EMAIL_USE_TLS: "True"
+      EMAIL_HOST_USER: noreply@glympsevideo.com
+      EMAIL_HOST_PASSWORD: insecure_password
+      DEFAULT_FROM_EMAIL: Glympse<glympse@glympsevideo.com>
+      ALLOWED_EMAIL_DOMAINS: glympsevideo.com
+      REDIS_HOST: redis://redis:6379
+      RABBITMQ_URL: amqp://glympse:QdDlBh0PdaqV2lH4xnXG@rabbitmq:5672/glympse
+      ADMIN_USERNAME: hub
+      ADMIN_EMAIL: admin@glympsevideo.com
+      ADMIN_PASSWORD: ZHNp2432
+      LOG_LEVEL: DEBUG
+      TIMEZONE: Europe/London
+      MICROSOFT_AUTH_CLIENT_ID: None
+      MICROSOFT_AUTH_CLIENT_SECRET: None
+      MICROSOFT_AUTH_TENANT_ID: None
+      MEMCACHED: memcached:11211
+      CUDA_DEVICE: cuda:0
+      DEBUG: "True"
+      REMOTE_WORKER: "False"
+      REMOTE_PRODUCTION: None
+    volumes:
+      - /opt/glympse/logs:/Glympse/logs
+      - /media:/media
+      - /rushes:/rushes:ro
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              device_ids:
+                - 00000000:01:00.0
+              capabilities:
+                - gpu
+    networks:
+      glympse: null
+  memcached:
+    image: memcached:latest
+    container_name: memcached
+    entrypoint: memcached -m 256
+    restart: unless-stopped
+    networks:
+      glympse: null
+networks:
+  glympse:
+    external: true

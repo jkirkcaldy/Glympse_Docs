@@ -8,6 +8,9 @@ next: docs/install_glympse
 Glympse is split into multiple services so you can split the workload between multiple machines. 
 
 The available services are as follows:
+* Celery Beat\
+You should only have one of these running across all your containers. This is responsible for managing the scheduled tasks. Without this, the scheduled tasks will not run. For ease, I usually run this in the same container as the webui. 
+
 * WebUI\
   This is the webui front end. The reverse proxy needs to point to the machine that is running this service. It is possible to run more than one frontend for load balancing purposes. 
 
