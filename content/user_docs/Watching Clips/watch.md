@@ -28,6 +28,9 @@ And there is a timecode box in the top left:
 
 This timecode box can be moved anywhere in the player window by dragging it to where you'd like it to be. You can reset the position of the timecode or disable the timecode box using the [user settings menu.](/user_docs/user_settings)
 
+It is possible to navigate to a specific timecode by simply entering it whilst the page is active. 
+
+If the timecode you want to go to is `10:03:05:00` pressing the 1 key will bring up the timecode navigation window. From there enter the rest of the timecode with no spaces or other punctuation. So you would enter: `10030500` and press enter. This will navigate to that timecode in the file. 
 
 #### Audio Selection
 For clips that have more than one track of audio, you can select the track to play back by clicking on the headphone icon on the playbar and selecting the audio track. Glympse by default creates a full mix of all the audio channels and plays this by default. 

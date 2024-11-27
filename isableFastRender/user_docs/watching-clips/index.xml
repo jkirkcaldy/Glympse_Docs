@@ -1,0 +1,171 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glympse – Watching Clips</title>
+    <link>http://localhost:1313/user_docs/watching-clips/</link>
+    <description>Recent content in Watching Clips on Glympse</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	  <atom:link href="http://localhost:1313/user_docs/watching-clips/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Watching clips</title>
+      <link>http://localhost:1313/user_docs/watching-clips/watch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/user_docs/watching-clips/watch/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/watch_clips.png&#34; alt=&#34;Watch Clips&#34; loading=&#34;lazy&#34; /&gt;
+This is where you will watch through the clips in Glympse.&lt;/p&gt;
+&lt;p&gt;When the page loads, it will automatically load the first clip into the player. To start playing you can press the big play button in the centre.&lt;/p&gt;
+&lt;h3&gt;The video Player&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;the-video-player&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-video-player&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;Timecode&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;timecode&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#timecode&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Glympse uses the timecode from the media files. This is so that it matches the timecode that your editor sees within Avid or their NLE of choice.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;It is possible that the timecode in Glympse may be a frame off, this is because the timecodes must be calculated rather than read from the file. It will never be more that one frame off the timecode in the NLE.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The timecode of the clip is displayed in two places. The seek bar:
+&lt;img src=&#34;http://localhost:1313/images/timecode1.png&#34; alt=&#34;Timecode 1&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;And there is a timecode box in the top left:
+&lt;img src=&#34;http://localhost:1313/images/timecode2.png&#34; alt=&#34;Timecode 2&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This timecode box can be moved anywhere in the player window by dragging it to where you&amp;rsquo;d like it to be. You can reset the position of the timecode or disable the timecode box using the &lt;a href=&#34;http://localhost:1313/user_docs/user_settings&#34; &gt;user settings menu.&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Audio Selection&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;audio-selection&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#audio-selection&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;For clips that have more than one track of audio, you can select the track to play back by clicking on the headphone icon on the playbar and selecting the audio track. Glympse by default creates a full mix of all the audio channels and plays this by default.
+&lt;img src=&#34;http://localhost:1313/images/audio_select.png&#34; alt=&#34;Audio Tracks&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;Theatre Mode&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;theatre-mode&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#theatre-mode&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/theatre_mode.png&#34; alt=&#34;Theatre Mode&#34; loading=&#34;lazy&#34; /&gt;
+Clicking the theatre mode button will expand the player to take 100% the width of the browser window. Clicking the theatre mode button again will return the player back to its normal size.&lt;/p&gt;
+&lt;h4&gt;Full Screen&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;full-screen&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#full-screen&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Click this button for full screen playback
+&lt;img src=&#34;http://localhost:1313/images/full_screen.png&#34; alt=&#34;Full Screen&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;Rotate&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;rotate&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#rotate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Some clips like GoPro files can be the wrong orientation. Click the rotate button to rotate the clip by 180°
+&lt;img src=&#34;http://localhost:1313/images/rotate.png&#34; alt=&#34;Rotate&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Click the restore rotate to return the clip to its original orientation.
+&lt;img src=&#34;http://localhost:1313/images/restore_rotate.png&#34; alt=&#34;Restore Rotate&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;Keyboard shortcuts&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;keyboard-shortcuts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#keyboard-shortcuts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;When on this page there are a number of keyboard shortcuts you can use.
+J, K, L are shuttle controls to speed up or change the direction of play. You may have to click in the player window to enable these controls. Holding the Shift Key will also increase the amount the play is sped up or slowed down.&lt;/p&gt;
+&lt;p&gt;M will add a marker at the current time of the clip. Markers will appear for everyone who has access to the production.&lt;/p&gt;
+&lt;h3&gt;Selecting Clips&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;selecting-clips&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#selecting-clips&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You can select the clip you&amp;rsquo;d like to view from the table at the bottom of the screen. Click the title of the clip to load it into the player.&lt;/p&gt;
+&lt;p&gt;You can also navigate through the clips by pressing the Next/Prev buttons at the bottom of the player. This will load the next or previous clip.&lt;/p&gt;
+&lt;p&gt;The title of the currently playing clip is shown at the bottom of the player and the middle of the menu bar at the top.&lt;/p&gt;
+&lt;h3&gt;Related Clips&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;related-clips&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#related-clips&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When clips are loaded into Glympse, the system will scan for the start timecode and the end timecode of a clip. This allows it to show all the related clips of the clip you are playing. The related clips box onthe right of the player will update whenever the source of the video player changes. You can automatically hide or show the related clips dropdown using the &lt;a href=&#34;http://localhost:1313/user_docs/user_settings&#34; &gt;user settings menu.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this example the clip being played belongs to the Main camera and there are two GoPro cameras that have clips with overlapping timecodes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/related.png&#34; alt=&#34;Related&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Clicking on the title of these related clips will play it in the current page, allowing you to quickly view clips from the other cameras. When you&amp;rsquo;re viewing a related clip, the title in the menu bar and below the player will change showing you that it&amp;rsquo;s playing a related clip then it will list the card followed by the clip title.
+&lt;img src=&#34;http://localhost:1313/images/related_clip.png&#34; alt=&#34;Related&#34; loading=&#34;lazy&#34; /&gt;
+As well as this, the prev/next buttons will disappear from below the player. You can select the next related clip by clicking on the clip title or you can return to the original clip by selecting it in the table at the bottom again. This will re-enable the next prev buttons and you can resume watching the camera clips as normal.&lt;/p&gt;
+&lt;p&gt;You can also navigate to any related cards from the related menu in the manu bar. This will show you camera cards from the same camera operator shot on the same day.&lt;/p&gt;
+&lt;h3&gt;Markers and Tags&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;markers-and-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#markers-and-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;You can add markers or tags to any clip within Glympse.&lt;/p&gt;
+&lt;h4&gt;Markers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;markers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#markers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Markers allow you to mark a specific place in a clip. They will be displayed in the marker window next to the player and clicking on them will take you to the correct position in the clip.&lt;/p&gt;
+&lt;p&gt;Markers are shown to everyone who has access to the clip.&lt;/p&gt;
+&lt;h4&gt;Tags&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Tags are to tag an entire clip. You can tag more than one clip at a time. There is also a setting in the user settings menu that will automatically add the tags to any related clips.&lt;/p&gt;
+&lt;p&gt;Tags are available to everyone who has access to the clips.&lt;/p&gt;
+&lt;h2&gt;Menu Bar&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;menu-bar&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#menu-bar&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/menu.png&#34; alt=&#34;Menu&#34; loading=&#34;lazy&#34; /&gt;
+The menu bar may show different options depending on what permissions you have. For example, the Download button will only appear if you have been give download permission for your production.&lt;/p&gt;
+&lt;h3&gt;File&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;file&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#file&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;From the file menu you can send a clip to be transcribed, edit the metadata of the card, submit the card for re-transcode or report issues with the card.&lt;/p&gt;
+&lt;h4&gt;Transcribe&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;transcribe&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#transcribe&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Select the clip or clips you would like to transcribe by checking the box in the table and click file then transcribe. This will send the selected clip(s) to the transcription engine. You can learn more about how this works &lt;a href=&#34;http://localhost:1313/user_docs/transcription&#34; &gt;here.&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Edit metadata&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;edit-metadata&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edit-metadata&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;From this menu you can change some of the metadata for the card. Anything you change here will be applied to every clip in the card.&lt;/p&gt;
+&lt;p&gt;You can change the date, the card name, or the shooter. You can also hide the card which will stop it from showing on the rushes page. Anyone with a link to the card would still be able to access the clips. This will &lt;em&gt;only&lt;/em&gt; stop the card from appearing in the rushes page. Users with access to the production can also unhide any card from the metadata edit pages.&lt;/p&gt;
+&lt;h4&gt;Request Retranscode&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;request-retranscode&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#request-retranscode&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;This will send the entire card back through the transcode engine. It allows you to report any issues with the card and manually submit the clips to the transcoder. The transcode will only work if the original clips are still available.&lt;/p&gt;
+&lt;h4&gt;Report Issues&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;report-issues&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#report-issues&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;This allows you to report issues with the current card. But this option will not automatically retranscode the clips. They would need to be manually transcoded by the admin team.&lt;/p&gt;
+&lt;h3&gt;Related&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;related&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#related&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This will show any cards that were shot by the same camera operator on the same day as the current card. Clicking one of these will take you load that current card.&lt;/p&gt;
+&lt;h3&gt;Download&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;download&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#download&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;If you have been given the download permissions for your production, you can download the original clip by selecting the clips from the table with the checkbox and clicking download. These files can be very large and may take a long time to download.&lt;/p&gt;
+&lt;h3&gt;Help&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;help&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#help&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This will open these help pages.&lt;/p&gt;
+&lt;h3&gt;Settings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;settings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#settings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This will open the user settings menu. &lt;a href=&#34;http://localhost:1313/user_docs/user_settings&#34; &gt;Click here to learn more.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In the centre of the menu bar, the title of the currently loaded clip will be displayed.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Adding A Production</title>
+      <link>http://localhost:1313/user_docs/watching-clips/add_production/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/user_docs/watching-clips/add_production/</guid>
+      <description>
+        
+        
+        &lt;p&gt;To add a production click the &amp;ldquo;Add Production&amp;rdquo; button in the top right of the home page.&lt;/p&gt;
+&lt;p&gt;This will bring up the dialogue to add a new production.
+&lt;img src=&#34;http://localhost:1313/images/add_production.png&#34; alt=&#34;Add Production Modal&#34; loading=&#34;lazy&#34; /&gt;
+A production consists of two parts. The Base Production and the Production.&lt;/p&gt;
+&lt;p&gt;For example your Base Production may be &amp;ldquo;Game of Thrones&amp;rdquo; then the Production could be &amp;ldquo;Game of Thrones Series 1&amp;rdquo;&lt;/p&gt;
+&lt;h2&gt;Base Production&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;base-production&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#base-production&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Select the Base Production, if it doesn&amp;rsquo;t exist create it by clicking the button next to the select dropdown.
+Enter the new name of your production and click submit.
+&lt;img src=&#34;http://localhost:1313/images/add_base.png&#34; alt=&#34;Add Production Base&#34; loading=&#34;lazy&#34; /&gt;
+The name you entered will be automatically selected.&lt;/p&gt;
+&lt;h2&gt;Production Series&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;production-series&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#production-series&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Enter the series of the production you are adding. This must be an integer.&lt;/p&gt;
+&lt;h2&gt;Friendly Name&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;friendly-name&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#friendly-name&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Enter a short friendly name for the series. This is what will appear on the default thumbnail. In this example we will enter &lt;code&gt;GOTS1&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Select the location of the camera rushes.&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;select-the-location-of-the-camera-rushes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#select-the-location-of-the-camera-rushes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Click on a directory to open it and select it by clicking the radio check mark on the left.
+&lt;img src=&#34;http://localhost:1313/images/series_select.png&#34; alt=&#34;Select Series&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Priority&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;priority&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#priority&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Most productions can be left as the default of 20. But if you have a smaller production or one where the transcodes need to be run before others you can change the priority here. 0 = lowest priority 100 = highest priority.&lt;/p&gt;
+&lt;h2&gt;Production Owner&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;production-owner&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#production-owner&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This is who will be responsible for the production. They will get the emails to say that the production has been scanned etc. This will usually be the edit assistant assigned to the project. The user must exist in the Glympse system.&lt;/p&gt;
+&lt;p&gt;If left empty, this will default to the admin user.&lt;/p&gt;
+&lt;p&gt;Click submit and the production will be added to Glympse and the Processing engine will start scanning for new clips.
+&lt;img src=&#34;http://localhost:1313/images/production_added.png&#34; alt=&#34;production Added&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>User Settings</title>
+      <link>http://localhost:1313/user_docs/watching-clips/user_settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/user_docs/watching-clips/user_settings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;From the User Settings menu you can change some personal settings.
+&lt;img src=&#34;http://localhost:1313/images/user_settings.png&#34; alt=&#34;User Settings&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Auto Add/Remove Tags&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;auto-addremove-tags&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#auto-addremove-tags&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;When checked, this will automatically add or remove tags on any related clips. When unchecked this, any tags you add or remove, will only be apply to the clips you have selected.&lt;/p&gt;
+&lt;h2&gt;Show Timecode Heading&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;show-timecode-heading&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#show-timecode-heading&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This enables/disables the timecode box in the video player. Is is enabled by default, should you wish to disable it, you would do so here.&lt;/p&gt;
+&lt;h2&gt;Timecode Size&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;timecode-size&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#timecode-size&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Default: 16&lt;/p&gt;
+&lt;p&gt;You can change the font size for the timecode box here. Increase to make the timecode larger, decrease to make it smaller.&lt;/p&gt;
+&lt;h2&gt;Reset Timecode Position&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;reset-timecode-position&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#reset-timecode-position&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;It is possible that the timecode box may disappear off the ege of the video player. Especially if you use multiple devices with different resolution screens. If that happens, you can reset it to the top left corner here.&lt;/p&gt;
+&lt;h2&gt;Auto Expand related clips&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;auto-expand-related-clips&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#auto-expand-related-clips&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This will automatically expand the related clips accordion oin the right next to the player. If it is enabled, the related clips will be shown automatically. If disabled you would need to manually open the accordion to display them.&lt;/p&gt;
+&lt;h2&gt;Marker Colour&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;marker-colour&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#marker-colour&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Change the colour of your markers, this only really applies to the Review section.&lt;/p&gt;
+&lt;h2&gt;Receive Admin Emails&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;receive-admin-emails&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#receive-admin-emails&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;If you are set as a production owner, this enables/disables the email updates.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

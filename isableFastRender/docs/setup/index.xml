@@ -1,0 +1,188 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glympse – System Setup</title>
+    <link>http://localhost:1313/docs/setup/</link>
+    <description>Recent content in System Setup on Glympse</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	  <atom:link href="http://localhost:1313/docs/setup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Django Admin Settings</title>
+      <link>http://localhost:1313/docs/setup/admin_settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/setup/admin_settings/</guid>
+      <description>
+        
+        
+        &lt;p&gt;The admin settings page is where you can change almost everything. If it&amp;rsquo;s in the database, it&amp;rsquo;s likely you can make changes here.&lt;/p&gt;
+&lt;h2&gt;System Settings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;system-settings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#system-settings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h1&gt;Whisper Model&lt;/h1&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/openai/whisper?tab=readme-ov-file#available-models-and-languages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;See here for more information&lt;/a&gt;&lt;br&gt;
+Default: small&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Size&lt;/th&gt;
+          &lt;th&gt;Parameters&lt;/th&gt;
+          &lt;th&gt;English-only model&lt;/th&gt;
+          &lt;th&gt;Multilingual model&lt;/th&gt;
+          &lt;th&gt;Required VRAM&lt;/th&gt;
+          &lt;th&gt;Relative speed&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;tiny&lt;/td&gt;
+          &lt;td&gt;39 M&lt;/td&gt;
+          &lt;td&gt;tiny.en&lt;/td&gt;
+          &lt;td&gt;tiny&lt;/td&gt;
+          &lt;td&gt;~1 GB&lt;/td&gt;
+          &lt;td&gt;~10x&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;base&lt;/td&gt;
+          &lt;td&gt;74 M&lt;/td&gt;
+          &lt;td&gt;base.en&lt;/td&gt;
+          &lt;td&gt;base&lt;/td&gt;
+          &lt;td&gt;~1 GB&lt;/td&gt;
+          &lt;td&gt;~7x&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;small&lt;/td&gt;
+          &lt;td&gt;244 M&lt;/td&gt;
+          &lt;td&gt;small.en&lt;/td&gt;
+          &lt;td&gt;small&lt;/td&gt;
+          &lt;td&gt;~2 GB&lt;/td&gt;
+          &lt;td&gt;~4x&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;medium&lt;/td&gt;
+          &lt;td&gt;769 M&lt;/td&gt;
+          &lt;td&gt;medium.en&lt;/td&gt;
+          &lt;td&gt;medium&lt;/td&gt;
+          &lt;td&gt;~5 GB&lt;/td&gt;
+          &lt;td&gt;~2x&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;large&lt;/td&gt;
+          &lt;td&gt;1550 M&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;large&lt;/td&gt;
+          &lt;td&gt;~10 GB&lt;/td&gt;
+          &lt;td&gt;1x&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;turbo&lt;/td&gt;
+          &lt;td&gt;809 M&lt;/td&gt;
+          &lt;td&gt;N/A&lt;/td&gt;
+          &lt;td&gt;turbo&lt;/td&gt;
+          &lt;td&gt;~6 GB&lt;/td&gt;
+          &lt;td&gt;~8x&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Authentication and Authorization&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;authentication-and-authorization&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#authentication-and-authorization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here you can manage the advanced settings of the users and Groups. Most of these settings can be changed from the front end without coming into the Django Admin page.&lt;/p&gt;
+&lt;h2&gt;Impersonate&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;impersonate&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#impersonate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here you can view the logs for the impersonation.&lt;/p&gt;
+&lt;h2&gt;Periodic Tasks.&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;periodic-tasks&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#periodic-tasks&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;These are created when installed. Should you wish to change the time the tasks run, you would do so in the Periodic Tasks section.&lt;/p&gt;
+&lt;h3&gt;Clocked&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;clocked&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#clocked&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;These run once at a specific date and time.&lt;/p&gt;
+&lt;h3&gt;Cron Tabs&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cron-tabs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cron-tabs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is where you can set advanced schedules using cron. &lt;a href=&#34;https://crontab.guru/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;See here for more information about Cron&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;Intervals&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;intervals&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#intervals&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;These will allow you to let a task run at specific intervals, e.g. run once every hour.&lt;/p&gt;
+&lt;h3&gt;Periodic Tasks&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;periodic-tasks-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#periodic-tasks-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is where you register or change the tasks, To change the schedule, you will need to create the schedule using one of the above options and then select it in this page.&lt;/p&gt;
+&lt;p&gt;You can also enable and disable tasks here as well as override the priority of the task.&lt;/p&gt;
+&lt;h2&gt;Review&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;review&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#review&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Review Files&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;review-files&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#review-files&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is where you can see all the files that have been uploaded for review. You can retranscode or delete the files from here.&lt;/p&gt;
+&lt;h3&gt;Share Links&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;share-links&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#share-links&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Add, edit or delete the share links for files here.&lt;/p&gt;
+&lt;h2&gt;Rushes Management&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;rushes-management&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#rushes-management&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You can make changes to the metadata of the clips or add or remove the productions here. But most of these tasks can and should be done in the front end.&lt;/p&gt;
+&lt;h3&gt;Base Productions&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;base-productions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#base-productions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Add or edit the base productions. You can also change the group that the Base Production is assigned to.&lt;/p&gt;
+&lt;h3&gt;Production&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;production&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#production&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Here you can make changes to the production such as the name, friendly name, filepath etc. You can also trigger some tasks from this page such as the file scan or the transcoder.&lt;/p&gt;
+&lt;h3&gt;clips&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;clips&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#clips&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Here you can see and edit all the metadata for the clips in the Glympse database.&lt;/p&gt;
+&lt;h2&gt;Transcribe&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;transcribe&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#transcribe&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Clips for Transcription&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;clips-for-transcription&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#clips-for-transcription&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Here you can see all of the clips that have been sent to the transcription engine. You can trigger tasks such as re-transcribe or delete the files from here.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Glympse Admin</title>
+      <link>http://localhost:1313/docs/setup/admin_frontend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/setup/admin_frontend/</guid>
+      <description>
+        
+        
+        &lt;p&gt;You can manage most of the admin settings from the front end. When a user is assigned admin permissions or is joined to the &amp;ldquo;hub&amp;rdquo; group they will have access to the admin menu on the webUI.&lt;/p&gt;
+&lt;h2&gt;Dashboard&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;dashboard&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dashboard&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Access the dashboard page. This give you an overview of the system. It will show some figures like how many clips are waiting to be transcoded or how many clips have been transcribed. It also shows you all running tasks and will also show who is currently online.&lt;/p&gt;
+&lt;p&gt;You can also trigger the periodic tasks from the bottom of this page.&lt;/p&gt;
+&lt;h2&gt;Logs&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;logs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#logs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;View the system logs.&lt;/p&gt;
+&lt;h2&gt;Add Production&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;add-production&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#add-production&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This brings up the add production modal where you can add a production. This is the same interface as pressing the add production button on the home page.&lt;/p&gt;
+&lt;h2&gt;Edit Production&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;edit-production&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edit-production&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here you can edit productions.&lt;/p&gt;
+&lt;h4&gt;Production Admin&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;production-admin&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#production-admin&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;This is who is responsible for the production. It&amp;rsquo;s likely that this should be the edit assistant assigned to the production. You can change this here, this person will receive the emails after the production has been scanned.&lt;/p&gt;
+&lt;h4&gt;Cover Image&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;cover-image&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#cover-image&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Click the image to upload a new thumbnail image for the production. Or reset it.&lt;/p&gt;
+&lt;h4&gt;Active&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;active&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#active&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;An active production will be scanned for new rushes. A deactivated production will still be available to users.&lt;/p&gt;
+&lt;h4&gt;Archive&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;archive&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#archive&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;This will remove the production from being able to be viewed. All files will remain, they will just be hidden.&lt;/p&gt;
+&lt;h4&gt;Export&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;export&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#export&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;This will export a json file containing the database entries for this production that can be archived to another system along with the media files. The media files will have to be manually backed up from your server. Once you have backed up the json file and the media, you can delete the production.&lt;/p&gt;
+&lt;h4&gt;Delete&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;delete&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#delete&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;This will delete the production and all the clips associated with it.&lt;/p&gt;
+&lt;h2&gt;Manage Users&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;manage-users&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#manage-users&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Edit Users&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;edit-users&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edit-users&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Select a user from the dropdown menu and you can assign the user to a group. You can also deactivate the user which will keep the account but not allow the user to log in. Or you can delete the user which will delete their account completely.&lt;/p&gt;
+&lt;p&gt;If the user was created by logging in via SSO, they will still be able to log in once they have been deleted. But they will have no permissions and won&amp;rsquo;t be assigned to a group so will not have access to any productions.&lt;/p&gt;
+&lt;p&gt;You can enable the ability for users to scan or start a production transcoder. They will only be able to scan or transcode the productions they have access to.&lt;/p&gt;
+&lt;p&gt;Clicking on the number beside their name at the top will enter the impersonation for this user. This is useful if you need to check a user has the correct permissions.&lt;/p&gt;
+&lt;p&gt;You can add a local user by clicking the blue + button at the top.&lt;/p&gt;
+&lt;h3&gt;Edit Group Permissions&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;edit-group-permissions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#edit-group-permissions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When a base production is added, a new group of the same name will be created.&lt;/p&gt;
+&lt;p&gt;From this page you can select a group and assign productions to it. Users assigned to this group will then be able to access these productions.&lt;/p&gt;
+&lt;p&gt;You can add a new group by clicking the blue + button at the top right.&lt;/p&gt;
+&lt;p&gt;From this page you can&lt;/p&gt;
+&lt;h2&gt;Settings&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;settings&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#settings&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This will open the django admin setting page.&lt;/p&gt;
+&lt;h2&gt;Send Email&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;send-email&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#send-email&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here you can send an email to registered users.
+Either select an existing email draft or click new to create a new one.&lt;/p&gt;
+&lt;p&gt;This will take you to the editor page. Set the Subject at the top, then select a date and time to send the email. Not setting this will send immediately.&lt;/p&gt;
+&lt;p&gt;Select the recipients of the email and draft the email below.&lt;/p&gt;
+&lt;p&gt;The editor is a WYSIWYG editor so the email body will appear exactly as it does in this editor. You can add images and graphics to the email body should you wish.&lt;/p&gt;
+&lt;p&gt;Click save and preview. This will show you a copy of what the email will look like when sent. You will be able to either schedule the send or edit the email again after this point.&lt;/p&gt;
+&lt;p&gt;Click Delete to delete the email draft.&lt;/p&gt;
+&lt;h2&gt;Clear Cache&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;clear-cache&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#clear-cache&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This clears the cache of the system. Useful if there have been large database changes. By default the system caches data for around 10 minutes.&lt;/p&gt;
+&lt;p&gt;Users may have to force refresh their browser to clear their local cache if the changes aren&amp;rsquo;t appearing for them.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
