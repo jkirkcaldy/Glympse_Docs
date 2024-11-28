@@ -1,7 +1,7 @@
 ---
 title: Metadata
 type: docs
-prev: /user_docs/
+prev: /user_docs/Edit_Metadata/editing_metadata
 weight: 2
 ---
 It is possible to edit some of the metadata for the clips within Glympse. 
