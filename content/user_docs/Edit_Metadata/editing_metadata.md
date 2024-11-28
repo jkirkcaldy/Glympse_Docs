@@ -2,7 +2,7 @@
 title: Editing Metadata
 type: docs
 prev: /user_docs/
-#next: /user_docs/Edit_Metadata/editing_metadata
+
 ---
 When you click Edit on the metadata page you will be taken to the edit page. This shows a table with all the clips for that production. You can see whether a clip has been transcoded, is marked as hidden or edit the metadata of the clip(s)
 

@@ -34,7 +34,7 @@ menu:
       weight: 5
       url: "https://git.themainframe.co.uk/josh/glympse_docs"
       params:
-        icon: github
+        icon: gitea
 
 params:
   navbar:
